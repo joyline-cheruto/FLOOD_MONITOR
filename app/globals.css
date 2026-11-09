@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  background: #0b0f14;
+  color: #e6edf5;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.leaflet-container {
+  background: #0b0f14;
+  font-family: inherit;
+}
+
+/* Severity pins */
+.pin {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+}
+
+/* Cluster bubbles in the dark theme */
+.cluster-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.18);
+  border: 2px solid #38bdf8;
+  color: #e0f2fe;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.leaflet-control-attribution {
+  background: rgba(11, 15, 20, 0.7) !important;
+  color: #8b98a9 !important;
+}
+.leaflet-control-attribution a {
+  color: #8b98a9 !important;
+}
